@@ -31,8 +31,6 @@ COPY --from=builder /unleash/docker /unleash
 
 RUN rm -rf /usr/local/lib/node_modules/npm/
 
-EXPOSE 4242
-
 USER node
 
 CMD ["node", "index.js"]
